@@ -1,0 +1,26 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Zadatak_2
+{
+    class Product
+    {
+        public string Description { get; private set; }
+        public double Price { get; private set; }           //in HRK
+
+        public Product(string description, double price)
+        {
+            this.Description = description;
+            this.Price = price;
+        }
+
+        public override string ToString()
+        {
+            return this.Description + '\n' + this.Price;
+        }
+
+    }
+}
